@@ -1,0 +1,9 @@
+- did not investigate if default country and currency is set with client IP
+- tdd could be used for parsing product pages
+  - page would be downloaded and stored in repository
+  - test cases and util methods would read and parse the local file
+  - required assertions would be added to test cases
+  - in a case when product pages are changed (ie. html changes), then the new file
+    could be downloaded and tested before new deployment and crawler run
+- logging should be better and should confiorm to lyst (most likely you gather logs
+  on central location)
