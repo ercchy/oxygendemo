@@ -31,4 +31,5 @@ pip-delete-this-directory.txt
 *.iml
 out
 gen
+items.json
 
