@@ -32,6 +32,8 @@ class OxygenSpider(CrawlSpider):
         ), follow=True),
         Rule(LinkExtractor(
             allow=['.*.aspx$'],
+            deny=['.*(AboutUs|ContactUs|Privacy-and-Cookies-Policy|Delivery|returns|Currency|Login'
+                  '|Registration).*aspx.*'],
             restrict_xpaths=['//body[@class="product_page"]', '//div[@class="itm"]/div[@class="itm"]//a']
         ), callback='parse_item')
     ]
